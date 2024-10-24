@@ -1,12 +1,12 @@
-# @umbrellio/observable
+# @cadolabs/observable &middot; <a target="_blank" href="https://github.com/Cado-Labs"><img src="https://github.com/Cado-Labs/cado-labs-logos/raw/main/cado_labs_badge.svg" alt="Supported by Cado Labs" style="max-width: 100%; height: 20px"></a>
 
-[![Coverage Status](https://coveralls.io/repos/github/umbrellio/observable/badge.svg?branch=master)](https://coveralls.io/github/umbrellio/observable?branch=master)
-[![Build Status](https://github.com/umbrellio/observable/actions/workflows/ci.yml/badge.svg)](https://github.com/umbrellio/observable)
+[![Coverage Status](https://coveralls.io/repos/github/cadolabs/observable/badge.svg?branch=master)](https://coveralls.io/github/cadolabs/observable?branch=master)
+[![Build Status](https://github.com/cadolabs/observable/actions/workflows/ci.yml/badge.svg)](https://github.com/cadolabs/observable)
 
 ## Install
 
 ```sh
-$ yarn add @umbrellio/observable
+$ yarn add @cadolabs/observable
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ $ yarn add @umbrellio/observable
 The library contains of 4 parts - `observable`, `observer`, `multipleObserver` and `useStore`.
 
 ```js
-import { observable, observer, multipleObserver, useStore } from "@umbrellio/observable"
+import { observable, observer, multipleObserver, useStore } from "@cadolabs/observable"
 ```
 
 ### Structures
@@ -59,7 +59,7 @@ observable(initial: InitialObject): ObservableStore
 ```
 
 ```js
-import { observable } from "@umbrellio/observable"
+import { observable } from "@cadolabs/observable"
 
 const listStore = observable({ list: [] })
 ```
@@ -82,7 +82,7 @@ observer(store: ObservableStore, options: ObserverOptions): ObserverFunction
 ```
 
 ```js
-import { observer } from "@umbrellio/observable"
+import { observer } from "@cadolabs/observable"
 
 @observer(listStore, {
   key: "categories",
@@ -106,7 +106,7 @@ multipleObserver(stores: MultipleObserverOptionItem[]): ObserverFunction
 ```
 
 ```js
-import { multipleObserver } from "@umbrellio/observable"
+import { multipleObserver } from "@cadolabs/observable"
 
 @multipleObserver([
   { store: listStore, key: "categories", map: state => state.list },
@@ -135,7 +135,7 @@ useStore(store: ObservableStore, options: UseStoreOptions): State
 ```
 
 ```js
-import { useStore } from "@umbrellio/observable"
+import { useStore } from "@cadolabs/observable"
 
 const List = () => {
   const categories = useStore(listStore, { map: state => state.list })
@@ -146,7 +146,7 @@ const List = () => {
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/umbrellio/observable.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cadolabs/observable.
 
 ## License
 
@@ -157,6 +157,6 @@ Released under MIT License.
 Created by [Aleksei Bespalov](https://github.com/nulldef),
 inspired by idea of [Aleksandr Komarov](https://github.com/akxcv).
 
-<a href="https://github.com/umbrellio/">
-<img style="float: left;" src="https://umbrellio.github.io/Umbrellio/supported_by_umbrellio.svg" alt="Supported by Umbrellio" width="439" height="72">
+<a href="https://github.com/Cado-Labs">
+  <img src="https://github.com/Cado-Labs/cado-labs-resources/blob/main/cado_labs_supporting_rounded.svg" alt="Supported by Cado Labs" />
 </a>
