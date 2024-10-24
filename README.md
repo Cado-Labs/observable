@@ -1,7 +1,7 @@
 # @cadolabs/observable &middot; <a target="_blank" href="https://github.com/Cado-Labs"><img src="https://github.com/Cado-Labs/cado-labs-logos/raw/main/cado_labs_badge.svg" alt="Supported by Cado Labs" style="max-width: 100%; height: 20px"></a>
 
-[![Coverage Status](https://coveralls.io/repos/github/cadolabs/observable/badge.svg?branch=master)](https://coveralls.io/github/cadolabs/observable?branch=master)
-[![Build Status](https://github.com/cadolabs/observable/actions/workflows/ci.yml/badge.svg)](https://github.com/cadolabs/observable)
+[![Coverage Status](https://coveralls.io/repos/github/Cado-Labs/observable/badge.svg?branch=master)](https://coveralls.io/github/cadolabs/observable?branch=master)
+[![Build Status](https://github.com/Cado-Labs/observable/actions/workflows/ci.yml/badge.svg)](https://github.com/cadolabs/observable)
 
 ## Install
 
