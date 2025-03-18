@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react"
+import { useSyncExternalStore } from "react"
 
 const useStore = (store, { map } = {}) => {
-  const [state, setState] = useState(store.getState())
-
-  useEffect(() => store.subscribe(data => setState(data)), [])
-
+  const state = useSyncExternalStore(store.subscribe, store.getState)
   return map ? map(state) : state
 }
 
