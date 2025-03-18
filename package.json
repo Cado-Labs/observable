@@ -1,6 +1,6 @@
 {
   "name": "@cadolabs/observable",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Observable library",
   "repository": "https://github.com/Cado-Labs/observable",
   "author": "Aleksei Bespalov <nulldefiner@gmail.com>",
@@ -47,6 +47,6 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "react": "^17 || ^18"
+    "react": "^18"
   }
 }
